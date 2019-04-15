@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.WebApi", "Stone.Clients\Stone.Clients.WebApi.csproj", "{9EB29944-364D-4D09-97D9-0EBFC4C4F747}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Web", "1 - Web", "{557E54AE-6578-4A78-8532-2311818CFF5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{28E95E01-89D3-4360-B09F-7559CB78171E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{21D557AE-3265-43D0-926E-9BE4C25EA0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{BDF660BC-4318-48CB-B41C-53E3ED9ADF0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{E717011E-4823-46D7-A078-BAFCC0392EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Application", "Stone.Clients.Application\Stone.Clients.Application.csproj", "{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Messages", "Stone.Clients.Messages\Stone.Clients.Messages.csproj", "{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Domain", "Stone.Clients.Domain\Stone.Clients.Domain.csproj", "{48519614-13A2-40CA-94DF-D9373DE605D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Infrastructure", "Stone.Clients.Infrastructure\Stone.Clients.Infrastructure.csproj", "{9024077A-75C1-4157-8C20-3FED0ED4D589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Models", "Stone.Clients.Models\Stone.Clients.Models.csproj", "{36812325-1B64-4D8A-8FC9-BC29ACADF589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.DependencyInjection", "Stone.Clients.DependencyInjection\Stone.Clients.DependencyInjection.csproj", "{CE3060ED-33CE-47A3-A007-96090AC7A05B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EB29944-364D-4D09-97D9-0EBFC4C4F747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB29944-364D-4D09-97D9-0EBFC4C4F747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB29944-364D-4D09-97D9-0EBFC4C4F747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB29944-364D-4D09-97D9-0EBFC4C4F747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48519614-13A2-40CA-94DF-D9373DE605D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48519614-13A2-40CA-94DF-D9373DE605D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48519614-13A2-40CA-94DF-D9373DE605D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48519614-13A2-40CA-94DF-D9373DE605D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9024077A-75C1-4157-8C20-3FED0ED4D589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9024077A-75C1-4157-8C20-3FED0ED4D589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9024077A-75C1-4157-8C20-3FED0ED4D589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9024077A-75C1-4157-8C20-3FED0ED4D589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36812325-1B64-4D8A-8FC9-BC29ACADF589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36812325-1B64-4D8A-8FC9-BC29ACADF589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36812325-1B64-4D8A-8FC9-BC29ACADF589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36812325-1B64-4D8A-8FC9-BC29ACADF589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3060ED-33CE-47A3-A007-96090AC7A05B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3060ED-33CE-47A3-A007-96090AC7A05B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3060ED-33CE-47A3-A007-96090AC7A05B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3060ED-33CE-47A3-A007-96090AC7A05B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9EB29944-364D-4D09-97D9-0EBFC4C4F747} = {557E54AE-6578-4A78-8532-2311818CFF5D}
+		{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD} = {28E95E01-89D3-4360-B09F-7559CB78171E}
+		{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038} = {28E95E01-89D3-4360-B09F-7559CB78171E}
+		{48519614-13A2-40CA-94DF-D9373DE605D6} = {21D557AE-3265-43D0-926E-9BE4C25EA0E4}
+		{9024077A-75C1-4157-8C20-3FED0ED4D589} = {BDF660BC-4318-48CB-B41C-53E3ED9ADF0C}
+		{36812325-1B64-4D8A-8FC9-BC29ACADF589} = {21D557AE-3265-43D0-926E-9BE4C25EA0E4}
+		{CE3060ED-33CE-47A3-A007-96090AC7A05B} = {BDF660BC-4318-48CB-B41C-53E3ED9ADF0C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {817B0074-5B03-41D6-ACC9-21AFF07319F4}
+	EndGlobalSection
+EndGlobal
