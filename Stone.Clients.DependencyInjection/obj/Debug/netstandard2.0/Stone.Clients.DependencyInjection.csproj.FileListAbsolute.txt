@@ -1,0 +1,15 @@
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.DependencyInjection.deps.json
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.DependencyInjection.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.DependencyInjection.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.csproj.CoreCompileInputs.cache
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.AssemblyInfoInputs.cache
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.AssemblyInfo.cs
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.Infrastructure.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.Models.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Framework.Data.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.Infrastructure.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.Models.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.csprojAssemblyReference.cache
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\obj\Debug\netstandard2.0\Stone.Clients.DependencyInjection.csproj.CopyComplete

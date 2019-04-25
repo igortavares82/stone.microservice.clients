@@ -1,0 +1,8 @@
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\Stone.Clients.Application.deps.json
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\Stone.Clients.Application.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\Stone.Clients.Application.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.csproj.CoreCompileInputs.cache
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.AssemblyInfoInputs.cache
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.AssemblyInfo.cs
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.pdb

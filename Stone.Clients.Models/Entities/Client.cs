@@ -2,6 +2,8 @@
 {
     public class Client
     {
+        public Client(){}
+
         public Client(string name, string state, string cpf)
         {
             Name = name;

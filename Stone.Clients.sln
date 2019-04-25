@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.WebApi", "Stone.Clients\Stone.Clients.WebApi.csproj", "{9EB29944-364D-4D09-97D9-0EBFC4C4F747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.WebApi", "Stone.Clients\Stone.Clients.WebApi.csproj", "{9EB29944-364D-4D09-97D9-0EBFC4C4F747}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Web", "1 - Web", "{557E54AE-6578-4A78-8532-2311818CFF5D}"
 EndProject
@@ -15,17 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{E717011E-4823-46D7-A078-BAFCC0392EFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Application", "Stone.Clients.Application\Stone.Clients.Application.csproj", "{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.Application", "Stone.Clients.Application\Stone.Clients.Application.csproj", "{E6DC2BD4-5D65-4290-B0E8-6E379B959EDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Messages", "Stone.Clients.Messages\Stone.Clients.Messages.csproj", "{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.Messages", "Stone.Clients.Messages\Stone.Clients.Messages.csproj", "{1F27AF36-4CE5-4CC2-947F-9AE2D01E1038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Domain", "Stone.Clients.Domain\Stone.Clients.Domain.csproj", "{48519614-13A2-40CA-94DF-D9373DE605D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.Domain", "Stone.Clients.Domain\Stone.Clients.Domain.csproj", "{48519614-13A2-40CA-94DF-D9373DE605D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Infrastructure", "Stone.Clients.Infrastructure\Stone.Clients.Infrastructure.csproj", "{9024077A-75C1-4157-8C20-3FED0ED4D589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.Infrastructure", "Stone.Clients.Infrastructure\Stone.Clients.Infrastructure.csproj", "{9024077A-75C1-4157-8C20-3FED0ED4D589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.Models", "Stone.Clients.Models\Stone.Clients.Models.csproj", "{36812325-1B64-4D8A-8FC9-BC29ACADF589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.Models", "Stone.Clients.Models\Stone.Clients.Models.csproj", "{36812325-1B64-4D8A-8FC9-BC29ACADF589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stone.Clients.DependencyInjection", "Stone.Clients.DependencyInjection\Stone.Clients.DependencyInjection.csproj", "{CE3060ED-33CE-47A3-A007-96090AC7A05B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stone.Clients.DependencyInjection", "Stone.Clients.DependencyInjection\Stone.Clients.DependencyInjection.csproj", "{CE3060ED-33CE-47A3-A007-96090AC7A05B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
