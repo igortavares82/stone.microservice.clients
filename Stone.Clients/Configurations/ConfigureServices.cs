@@ -1,15 +1,18 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Stone.Framework.Data.Options;
-using System.Configuration;
 
 namespace Stone.Clients.WebApi.Configurations
 {
     public static class ConfigureServices
     {
-        public static void Configure(IServiceCollection services)
+        internal static void ConfigureOptions(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<FirebaseClientOptions>(options => Configuration.GetSection("FirebaseClient").Bind(options));
+            services.Configure<FirebaseClientOptions>(options => 
+            {
+                configuration.GetSection("FirebaseClientOptions").Bind(options);
+                options.SetAuthToken();
+            });
         }
     }
 }

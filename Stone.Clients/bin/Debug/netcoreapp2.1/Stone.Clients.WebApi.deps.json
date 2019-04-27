@@ -28,8 +28,13 @@
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Abstractions": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
+          "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
+          "Microsoft.Extensions.Configuration.Json": "2.1.1",
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
+          "Stone.Clients.Application": "1.0.0",
           "Stone.Clients.DependencyInjection": "1.0.0",
           "Stone.Clients.Infrastructure": "1.0.0",
           "Stone.Framework.Data": "1.0.0.0"
@@ -262,8 +267,21 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Stone.Clients.Application/1.0.0": {
+        "dependencies": {
+          "Stone.Clients.Domain": "1.0.0",
+          "Stone.Clients.Messages": "1.0.0"
+        },
+        "runtime": {
+          "Stone.Clients.Application.dll": {}
+        },
+        "compile": {
+          "Stone.Clients.Application.dll": {}
+        }
+      },
       "Stone.Clients.DependencyInjection/1.0.0": {
         "dependencies": {
+          "Stone.Clients.Application": "1.0.0",
           "Stone.Clients.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -271,6 +289,18 @@
         },
         "compile": {
           "Stone.Clients.DependencyInjection.dll": {}
+        }
+      },
+      "Stone.Clients.Domain/1.0.0": {
+        "dependencies": {
+          "Stone.Clients.Infrastructure": "1.0.0",
+          "Stone.Clients.Models": "1.0.0"
+        },
+        "runtime": {
+          "Stone.Clients.Domain.dll": {}
+        },
+        "compile": {
+          "Stone.Clients.Domain.dll": {}
         }
       },
       "Stone.Clients.Infrastructure/1.0.0": {
@@ -284,6 +314,14 @@
         },
         "compile": {
           "Stone.Clients.Infrastructure.dll": {}
+        }
+      },
+      "Stone.Clients.Messages/1.0.0": {
+        "runtime": {
+          "Stone.Clients.Messages.dll": {}
+        },
+        "compile": {
+          "Stone.Clients.Messages.dll": {}
         }
       },
       "Stone.Clients.Models/1.0.0": {
@@ -3333,12 +3371,27 @@
       "path": "system.runtime.interopservices.windowsruntime/4.3.0",
       "hashPath": "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512"
     },
+    "Stone.Clients.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Stone.Clients.DependencyInjection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
+    "Stone.Clients.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Stone.Clients.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stone.Clients.Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

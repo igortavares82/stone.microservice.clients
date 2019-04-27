@@ -1,7 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Stone.Clients.Application.Abstractions;
+using Stone.Clients.Application.Concretes;
+using Stone.Clients.Domain.Abstractions.EntityService;
+using Stone.Clients.Domain.Concretes.EntityService;
 using Stone.Clients.Infrastructure.Abstractions;
 using Stone.Clients.Infrastructure.Concretes;
-using Stone.Framework.Data.Options;
 
 namespace Stone.Clients.DependencyInjection
 {
@@ -9,11 +12,8 @@ namespace Stone.Clients.DependencyInjection
     {
         public static void Configure(IServiceCollection services)
         {
-            ConfigureInfrastructure(services);
-        }
-
-        private static void ConfigureInfrastructure(IServiceCollection services)
-        {
+            services.AddScoped<IClientApplication, ClientApplication>();
+            services.AddScoped<IClientEntityService, ClientEntityService>();
             services.AddScoped<IClientRepository, ClientRepository>();
         }
     }

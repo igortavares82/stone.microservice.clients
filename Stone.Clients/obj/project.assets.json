@@ -4385,10 +4385,25 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Stone.Clients.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Stone.Clients.Domain": "1.0.0",
+          "Stone.Clients.Messages": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stone.Clients.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stone.Clients.Application.dll": {}
+        }
+      },
       "Stone.Clients.DependencyInjection/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Stone.Clients.Application": "1.0.0",
           "Stone.Clients.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -4396,6 +4411,20 @@
         },
         "runtime": {
           "bin/placeholder/Stone.Clients.DependencyInjection.dll": {}
+        }
+      },
+      "Stone.Clients.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Stone.Clients.Infrastructure": "1.0.0",
+          "Stone.Clients.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stone.Clients.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stone.Clients.Domain.dll": {}
         }
       },
       "Stone.Clients.Infrastructure/1.0.0": {
@@ -4411,6 +4440,16 @@
         },
         "runtime": {
           "bin/placeholder/Stone.Clients.Infrastructure.dll": {}
+        }
+      },
+      "Stone.Clients.Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Stone.Clients.Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stone.Clients.Messages.dll": {}
         }
       },
       "Stone.Clients.Models/1.0.0": {
@@ -11690,15 +11729,30 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Stone.Clients.Application/1.0.0": {
+      "type": "project",
+      "path": "../Stone.Clients.Application/Stone.Clients.Application.csproj",
+      "msbuildProject": "../Stone.Clients.Application/Stone.Clients.Application.csproj"
+    },
     "Stone.Clients.DependencyInjection/1.0.0": {
       "type": "project",
       "path": "../Stone.Clients.DependencyInjection/Stone.Clients.DependencyInjection.csproj",
       "msbuildProject": "../Stone.Clients.DependencyInjection/Stone.Clients.DependencyInjection.csproj"
     },
+    "Stone.Clients.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Stone.Clients.Domain/Stone.Clients.Domain.csproj",
+      "msbuildProject": "../Stone.Clients.Domain/Stone.Clients.Domain.csproj"
+    },
     "Stone.Clients.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Stone.Clients.Infrastructure/Stone.Clients.Infrastructure.csproj",
       "msbuildProject": "../Stone.Clients.Infrastructure/Stone.Clients.Infrastructure.csproj"
+    },
+    "Stone.Clients.Messages/1.0.0": {
+      "type": "project",
+      "path": "../Stone.Clients.Messages/Stone.Clients.Messages.csproj",
+      "msbuildProject": "../Stone.Clients.Messages/Stone.Clients.Messages.csproj"
     },
     "Stone.Clients.Models/1.0.0": {
       "type": "project",
@@ -11712,9 +11766,13 @@
       "Microsoft.Extensions.Configuration >= 2.1.1",
       "Microsoft.Extensions.Configuration.Abstractions >= 2.1.1",
       "Microsoft.Extensions.Configuration.Binder >= 2.1.1",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 2.1.1",
+      "Microsoft.Extensions.Configuration.Json >= 2.1.1",
       "Microsoft.Extensions.DependencyInjection >= 2.1.1",
+      "Microsoft.Extensions.Options >= 2.1.1",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Stone.Clients.Application >= 1.0.0",
       "Stone.Clients.DependencyInjection >= 1.0.0",
       "Stone.Clients.Infrastructure >= 1.0.0"
     ]
@@ -11749,6 +11807,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\projects\\stone\\stone.microservice.clients\\Stone.Clients.Application\\Stone.Clients.Application.csproj": {
+              "projectPath": "C:\\projects\\stone\\stone.microservice.clients\\Stone.Clients.Application\\Stone.Clients.Application.csproj"
+            },
             "C:\\projects\\stone\\stone.microservice.clients\\Stone.Clients.DependencyInjection\\Stone.Clients.DependencyInjection.csproj": {
               "projectPath": "C:\\projects\\stone\\stone.microservice.clients\\Stone.Clients.DependencyInjection\\Stone.Clients.DependencyInjection.csproj"
             },
@@ -11785,7 +11846,19 @@
             "target": "Package",
             "version": "[2.1.1, )"
           },
+          "Microsoft.Extensions.Configuration.FileExtensions": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.Extensions.Options": {
             "target": "Package",
             "version": "[2.1.1, )"
           },

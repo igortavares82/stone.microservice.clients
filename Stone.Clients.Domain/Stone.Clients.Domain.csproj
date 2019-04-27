@@ -5,10 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstractions\EntityService\" />
     <Folder Include="Abstractions\TaskService\" />
-    <Folder Include="Concretes\EntityService\" />
     <Folder Include="Concretes\TaskService\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stone.Clients.Infrastructure\Stone.Clients.Infrastructure.csproj" />
+    <ProjectReference Include="..\Stone.Clients.Models\Stone.Clients.Models.csproj" />
   </ItemGroup>
 
 </Project>

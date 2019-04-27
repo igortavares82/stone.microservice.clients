@@ -11,8 +11,8 @@
             Cpf = cpf;
         }
 
-        public string Name { get; private set; }
-        public string State { get; private set; }
-        public string Cpf { get; private set; }
+        public string Name { get; set; }
+        public string State { get; set; }
+        public string Cpf { get; set; }
     }
 }

@@ -11,10 +11,14 @@ namespace Stone.Clients.Infrastructure.Concretes
 {
     public class ClientRepository : FirebaseRepository<Client>, IClientRepository
     {
-
         public ClientRepository(IOptions<FirebaseClientOptions> clientOptions) : base(clientOptions) { }
 
-        public async Task<Client> Get(string cpf)
+        public async Task RegisterAsync(Client model)
+        {
+            await base.InsertAsync(model);
+        }
+
+        public async Task<Client> GetAsync(string cpf)
         {
             IEnumerable<Client> clients = await base.GetAsync(it => it.Cpf == cpf);
             return clients.FirstOrDefault();

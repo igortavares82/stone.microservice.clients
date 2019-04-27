@@ -18,3 +18,12 @@ C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2
 C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Models.pdb
 C:\projects\stone\stone.microservice.clients\Stone.Clients\obj\Debug\netcoreapp2.1\Stone.Clients.WebApi.RazorTargetAssemblyInfo.cache
 C:\projects\stone\stone.microservice.clients\Stone.Clients\obj\Debug\netcoreapp2.1\Stone.Clients.WebApi.csproj.CopyComplete
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.WebApi.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients\obj\Debug\netcoreapp2.1\Stone.Clients.WebApi.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients\obj\Debug\netcoreapp2.1\Stone.Clients.WebApi.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Application.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Domain.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Messages.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Application.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Domain.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Messages.pdb

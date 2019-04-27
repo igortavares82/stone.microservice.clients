@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Stone.Clients.Application\Stone.Clients.Application.csproj" />
     <ProjectReference Include="..\Stone.Clients.Infrastructure\Stone.Clients.Infrastructure.csproj" />
   </ItemGroup>
 
