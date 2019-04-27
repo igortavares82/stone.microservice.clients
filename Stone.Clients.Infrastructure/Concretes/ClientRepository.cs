@@ -23,5 +23,11 @@ namespace Stone.Clients.Infrastructure.Concretes
             IEnumerable<Client> clients = await base.GetAsync(it => it.Cpf == cpf);
             return clients.FirstOrDefault();
         }
+
+        public async Task<List<Client>> GetAllAsync()
+        {
+            IEnumerable<Client> clients = await base.GetAllAsync();
+            return clients.ToList();
+        }
     }
 }

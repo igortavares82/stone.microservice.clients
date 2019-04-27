@@ -11,7 +11,7 @@ namespace Stone.Clients.WebApi.Configurations
             services.Configure<FirebaseClientOptions>(options => 
             {
                 configuration.GetSection("FirebaseClientOptions").Bind(options);
-                options.SetAuthToken();
+                options.CallTokenFactory();
             });
         }
     }

@@ -1,10 +1,4 @@
 {
-  "Logging": {
-    "LogLevel": {
-      "Default": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
   "FirebaseClientOptions": {
     "Uri": "https://stone-charging.firebaseio.com",
     "Child": "clients",

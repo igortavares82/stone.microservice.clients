@@ -21,9 +21,9 @@ namespace Stone.Clients.Domain.Concretes.EntityService
             return ClientRepository.GetAsync(cpf);
         }
 
-        public Task<List<Client>> GetAllAsync()
+        public async Task<List<Client>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await ClientRepository.GetAllAsync();
         }
 
         public async Task<string> RegisterAsync(Client model)

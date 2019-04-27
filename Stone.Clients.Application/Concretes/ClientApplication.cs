@@ -3,7 +3,6 @@ using Stone.Clients.Application.Mappers;
 using Stone.Clients.Domain.Abstractions.EntityService;
 using Stone.Clients.Messages;
 using Stone.Clients.Models.Entities;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -26,7 +25,8 @@ namespace Stone.Clients.Application.Concretes
 
         public async Task<List<ClientMessage>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            List<Client> clients = await ClientEntityService.GetAllAsync();
+            return ClientMapper.MapTo(clients);
         }
 
         public async Task<string> RegisterAsync(ClientMessage message)

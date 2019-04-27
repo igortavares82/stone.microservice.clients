@@ -18,10 +18,10 @@ namespace Stone.Clients.WebApi.Controllers
             ClientApplication = clientApplication;
         }
 
-        [HttpGet]
-        public IEnumerable<string> Get()
+        [HttpGet, Produces("application/json", Type = typeof(ClientMessage))]
+        public async Task<List<ClientMessage>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return await ClientApplication.GetAllAsync();
         }
 
         [HttpGet("{cpf}"), Produces("application/json", Type = typeof(ClientMessage))]

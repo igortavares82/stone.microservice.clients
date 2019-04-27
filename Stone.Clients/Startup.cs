@@ -6,25 +6,26 @@ using Microsoft.Extensions.DependencyInjection;
 using Stone.Clients.DependencyInjection;
 using Stone.Clients.WebApi.Configurations;
 using Stone.Framework.Filter.Concretes;
+using System.IO;
 
 namespace Stone.Clients
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+        public IConfigurationBuilder Builder { get; }
+
         public Startup(IHostingEnvironment env, IConfiguration configuration)
         {
             Builder = new ConfigurationBuilder()
-                      .SetBasePath(env.ContentRootPath)
-                      .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                      .SetBasePath(Path.Combine(env.ContentRootPath, "Settings"))
+                      .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                      .AddJsonFile("firebasesettings.json", optional: true, reloadOnChange: true);
 
             Builder.AddEnvironmentVariables();
             Configuration = Builder.Build();
         }
 
-        public IConfiguration Configuration { get; }
-        public IConfigurationBuilder Builder { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureOptions(Configuration);
@@ -34,7 +35,6 @@ namespace Stone.Clients
             DIFactory.Configure(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
