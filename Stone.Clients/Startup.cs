@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Stone.Clients.DependencyInjection;
 using Stone.Clients.WebApi.Configurations;
+using Stone.Framework.Filter.Concretes;
 
 namespace Stone.Clients
 {
@@ -28,6 +29,8 @@ namespace Stone.Clients
         {
             services.ConfigureOptions(Configuration);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc(options => options.Filters.Add(new ValidateModelStateAttribute()));
+
             DIFactory.Configure(services);
         }
 

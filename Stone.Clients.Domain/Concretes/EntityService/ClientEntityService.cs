@@ -3,7 +3,6 @@ using Stone.Clients.Infrastructure.Abstractions;
 using Stone.Clients.Models.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Stone.Clients.Domain.Concretes.EntityService
@@ -19,7 +18,7 @@ namespace Stone.Clients.Domain.Concretes.EntityService
 
         public Task<Client> GetAsync(string cpf)
         {
-            throw new NotImplementedException();
+            return ClientRepository.GetAsync(cpf);
         }
 
         public Task<List<Client>> GetAllAsync()

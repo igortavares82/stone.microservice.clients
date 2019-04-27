@@ -19,3 +19,4 @@ C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug
 C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\Stone.Clients.Models.pdb
 C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\obj\Debug\netstandard2.0\Stone.Clients.Application.csproj.CopyComplete
+C:\projects\stone\stone.microservice.clients\Stone.Clients.Application\bin\Debug\netstandard2.0\Stone.Framework.Validator.dll

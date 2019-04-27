@@ -27,3 +27,5 @@ C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2
 C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Application.pdb
 C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Domain.pdb
 C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Clients.Messages.pdb
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Framework.Filter.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients\bin\Debug\netcoreapp2.1\Stone.Framework.Validator.dll

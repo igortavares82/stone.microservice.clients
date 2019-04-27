@@ -37,7 +37,8 @@
           "Stone.Clients.Application": "1.0.0",
           "Stone.Clients.DependencyInjection": "1.0.0",
           "Stone.Clients.Infrastructure": "1.0.0",
-          "Stone.Framework.Data": "1.0.0.0"
+          "Stone.Framework.Data": "1.0.0.0",
+          "Stone.Framework.Filter": "1.0.0.0"
         },
         "runtime": {
           "Stone.Clients.WebApi.dll": {}
@@ -270,7 +271,8 @@
       "Stone.Clients.Application/1.0.0": {
         "dependencies": {
           "Stone.Clients.Domain": "1.0.0",
-          "Stone.Clients.Messages": "1.0.0"
+          "Stone.Clients.Messages": "1.0.0",
+          "Stone.Framework.Validator": "1.0.0.0"
         },
         "runtime": {
           "Stone.Clients.Application.dll": {}
@@ -341,6 +343,25 @@
         },
         "compile": {
           "Stone.Framework.Data.dll": {}
+        }
+      },
+      "Stone.Framework.Filter/1.0.0.0": {
+        "runtime": {
+          "Stone.Framework.Filter.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "Stone.Framework.Filter.dll": {}
+        }
+      },
+      "Stone.Framework.Validator.Reference/1.0.0.0": {
+        "runtime": {
+          "Stone.Framework.Validator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3402,6 +3423,16 @@
       "sha512": ""
     },
     "Stone.Framework.Data/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stone.Framework.Filter/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stone.Framework.Validator.Reference/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -7,7 +7,7 @@ namespace Stone.Clients.Application.Abstractions
     public interface IClientApplication
     {
         Task<string> RegisterAsync(ClientMessage message);
-        Task<ClientMessage> GetAsync(string cpf);
+        Task<ClientMessage> GetAsync(ClientSearchMessage message);
         Task<List<ClientMessage>> GetAllAsync();
     }
 }

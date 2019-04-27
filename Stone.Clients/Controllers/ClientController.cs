@@ -24,10 +24,10 @@ namespace Stone.Clients.WebApi.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("{cpf}"), Produces("application/json", Type = typeof(ClientMessage))]
+        public async Task<ClientMessage> Get([FromRoute] ClientSearchMessage message)
         {
-            return "value";
+            return await ClientApplication.GetAsync(message);
         }
 
         [HttpPost, Produces("application/json", Type = typeof(string))]

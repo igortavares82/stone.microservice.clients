@@ -18,9 +18,9 @@ namespace Stone.Clients.Application.Concretes
             ClientEntityService = clientEntityService;
         }
 
-        public async Task<ClientMessage> GetAsync(string cpf)
+        public async Task<ClientMessage> GetAsync(ClientSearchMessage message)
         {
-            Client model = await ClientEntityService.GetAsync(cpf);
+            Client model = await ClientEntityService.GetAsync(message.Cpf);
             return ClientMapper.MapTo(model);
         }
 
