@@ -3,6 +3,8 @@ using Stone.Clients.Application.Mappers;
 using Stone.Clients.Domain.Abstractions.EntityService;
 using Stone.Clients.Messages;
 using Stone.Clients.Models.Entities;
+using Stone.Framework.Result.Abstractions;
+using Stone.Framework.Result.Mappers;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -17,22 +19,22 @@ namespace Stone.Clients.Application.Concretes
             ClientEntityService = clientEntityService;
         }
 
-        public async Task<ClientMessage> GetAsync(ClientSearchMessage message)
+        public async Task<IApplicationResult<ClientMessage>> GetAsync(ClientSearchMessage message)
         {
-            Client model = await ClientEntityService.GetAsync(message.Cpf);
-            return ClientMapper.MapTo(model);
+            IDomainResult<Client> domainResult = await ClientEntityService.GetAsync(message.Cpf);
+            return ResultMapper.MapFromDomainResult(domainResult, (domain) => ClientMapper.MapTo(domain));
         }
 
-        public async Task<List<ClientMessage>> GetAllAsync()
+        public async Task<IApplicationResult<List<ClientMessage>>> GetAllAsync()
         {
-            List<Client> clients = await ClientEntityService.GetAllAsync();
-            return ClientMapper.MapTo(clients);
+            IDomainResult<List<Client>> domainResult = await ClientEntityService.GetAllAsync();
+            return ResultMapper.MapFromDomainResult(domainResult, (domain) => ClientMapper.MapTo(domain));
         }
 
-        public async Task<string> RegisterAsync(ClientMessage message)
+        public async Task<IApplicationResult<bool>> RegisterAsync(ClientMessage message)
         {
-            Client model = ClientMapper.MapTo(message);
-            return await ClientEntityService.RegisterAsync(model);
+            IDomainResult<bool> domainResult = await ClientEntityService.RegisterAsync(ClientMapper.MapTo(message));
+            return ResultMapper.MapFromDomainResult(domainResult, (domain) => domain);
         }
     }
 }

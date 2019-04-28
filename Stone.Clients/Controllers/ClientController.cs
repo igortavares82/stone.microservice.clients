@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Stone.Clients.Application.Abstractions;
 using Stone.Clients.Messages;
+using Stone.Framework.Result.Abstractions;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Stone.Clients.WebApi.Controllers
 {
@@ -18,20 +17,20 @@ namespace Stone.Clients.WebApi.Controllers
             ClientApplication = clientApplication;
         }
 
-        [HttpGet, Produces("application/json", Type = typeof(ClientMessage))]
-        public async Task<List<ClientMessage>> Get()
-        {
-            return await ClientApplication.GetAllAsync();
-        }
-
-        [HttpGet("{cpf}"), Produces("application/json", Type = typeof(ClientMessage))]
-        public async Task<ClientMessage> Get([FromRoute] ClientSearchMessage message)
+        [HttpGet("{cpf}"), Produces("application/json", Type = typeof(IApplicationResult<ClientMessage>))]
+        public async Task<IActionResult> GetAsync([FromRoute] ClientSearchMessage message)
         {
             return await ClientApplication.GetAsync(message);
         }
 
-        [HttpPost, Produces("application/json", Type = typeof(string))]
-        public async Task<string> Post([FromBody] ClientMessage message)
+        [HttpGet, Produces("application/json", Type = typeof(IApplicationResult<List<ClientMessage>>))]
+        public async Task<IActionResult> GetAsync()
+        {
+            return await ClientApplication.GetAllAsync();
+        }
+
+        [HttpPost, Produces("application/json", Type = typeof(IApplicationResult<bool>))]
+        public async Task<IActionResult> Post([FromBody] ClientMessage message)
         {
             return await ClientApplication.RegisterAsync(message);
         }

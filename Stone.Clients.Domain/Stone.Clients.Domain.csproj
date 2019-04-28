@@ -14,4 +14,10 @@
     <ProjectReference Include="..\Stone.Clients.Models\Stone.Clients.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Stone.Framework.Result">
+      <HintPath>..\References\Stone.Framework.Result.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

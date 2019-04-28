@@ -22,3 +22,4 @@ C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\b
 C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Clients.Messages.pdb
 C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
 C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Framework.Validator.dll
+C:\projects\stone\stone.microservice.clients\Stone.Clients.DependencyInjection\bin\Debug\netstandard2.0\Stone.Framework.Result.dll

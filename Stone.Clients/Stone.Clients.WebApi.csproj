@@ -34,6 +34,9 @@
     <Reference Include="Stone.Framework.Filter">
       <HintPath>..\References\Stone.Framework.Filter.dll</HintPath>
     </Reference>
+    <Reference Include="Stone.Framework.Result">
+      <HintPath>..\References\Stone.Framework.Result.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

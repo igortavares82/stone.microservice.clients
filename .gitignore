@@ -2,3 +2,11 @@ Stone.Clients/obj/Debug/netcoreapp2.1/Stone.Clients.WebApi.RazorAssemblyInfo.cs
 Stone.Clients/obj/Debug/netcoreapp2.1/Stone.Clients.WebApi.AssemblyInfo.cs
 .vs/Stone.Clients/v15/Server/sqlite3/storage.ide-shm
 .vs/Stone.Clients/v15/Server/sqlite3/storage.ide-wal
+.vs/Stone.Clients/v15/Server/sqlite3/storage.ide
+.vs/Stone.Clients/DesignTimeBuild/.dtbcache
+Stone.Clients/obj/Debug/netcoreapp2.1/Stone.Clients.WebApi.csproj.FileListAbsolute.txt
+Stone.Clients/bin/Debug/netcoreapp2.1/Stone.Clients.WebApi.deps.json
+Stone.Clients.Domain/obj/Debug/netstandard2.0/Stone.Clients.Domain.csproj.FileListAbsolute.txt
+Stone.Clients.Domain/bin/Debug/netstandard2.0/Stone.Clients.Domain.deps.json
+Stone.Clients.Application/obj/Debug/netstandard2.0/Stone.Clients.Application.csproj.FileListAbsolute.txt
+Stone.Clients.Application/bin/Debug/netstandard2.0/Stone.Clients.Application.deps.json

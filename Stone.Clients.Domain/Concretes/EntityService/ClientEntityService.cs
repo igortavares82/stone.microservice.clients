@@ -1,7 +1,9 @@
 ﻿using Stone.Clients.Domain.Abstractions.EntityService;
 using Stone.Clients.Infrastructure.Abstractions;
 using Stone.Clients.Models.Entities;
-using System;
+using Stone.Framework.Result.Abstractions;
+using Stone.Framework.Result.Concretes;
+using Stone.Framework.Result.Enums;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -16,26 +18,41 @@ namespace Stone.Clients.Domain.Concretes.EntityService
             ClientRepository = clientRepository;
         }
 
-        public Task<Client> GetAsync(string cpf)
+        public async Task<IDomainResult<Client>> GetAsync(string cpf)
         {
-            return ClientRepository.GetAsync(cpf);
+            IDomainResult<Client> result = new DomainResult<Client>()
+            {
+                Data = await ClientRepository.GetAsync(cpf)
+            };
+
+            return result;
         }
 
-        public async Task<List<Client>> GetAllAsync()
+        public async Task<IDomainResult<List<Client>>> GetAllAsync()
         {
-            return await ClientRepository.GetAllAsync();
+            IDomainResult<List<Client>> result = new DomainResult<List<Client>>()
+            {
+                Data = await ClientRepository.GetAllAsync()
+            };
+
+            return result;
         }
 
-        public async Task<string> RegisterAsync(Client model)
+        public async Task<IDomainResult<bool>> RegisterAsync(Client model)
         {
-            string result = "Client has been registered successfully";
-
+            IDomainResult<bool> result = new DomainResult<bool>();
             Client registeredClient = await ClientRepository.GetAsync(model.Cpf);
 
             if (registeredClient == null)
+            {
                 await ClientRepository.RegisterAsync(model);
+                result.Messages.Add("Client has been registered successfully");
+            }
             else
-                result = "Client already registered";
+            {
+                result.ResultType = DomainResultType.DomainError;
+                result.Messages.Add("Client already registered");
+            }
 
             return result;
         }
