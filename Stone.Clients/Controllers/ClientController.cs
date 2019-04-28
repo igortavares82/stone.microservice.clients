@@ -17,6 +17,9 @@ namespace Stone.Clients.WebApi.Controllers
             ClientApplication = clientApplication;
         }
 
+        [HttpGet("wellcome"), Produces("text/plain", Type = typeof(string))]
+        public string GetWellcome() => "Wellcome to client service!";
+
         [HttpGet("{cpf}"), Produces("application/json", Type = typeof(IApplicationResult<ClientMessage>))]
         public async Task<IActionResult> GetAsync([FromRoute] ClientSearchMessage message)
         {

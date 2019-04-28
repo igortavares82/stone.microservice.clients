@@ -10,3 +10,4 @@ Stone.Clients.Domain/obj/Debug/netstandard2.0/Stone.Clients.Domain.csproj.FileLi
 Stone.Clients.Domain/bin/Debug/netstandard2.0/Stone.Clients.Domain.deps.json
 Stone.Clients.Application/obj/Debug/netstandard2.0/Stone.Clients.Application.csproj.FileListAbsolute.txt
 Stone.Clients.Application/bin/Debug/netstandard2.0/Stone.Clients.Application.deps.json
+Stone.Clients.DependencyInjection/obj/Debug/netstandard2.0/Stone.Clients.DependencyInjection.csproj.FileListAbsolute.txt

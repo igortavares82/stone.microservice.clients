@@ -8,7 +8,7 @@
         {
             Name = name;
             State = state;
-            Cpf = cpf.Replace(".", string.Empty).Replace("-", string.Empty);
+            Cpf = cpf;
         }
 
         public string Name { get; set; }
