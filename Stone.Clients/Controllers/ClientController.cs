@@ -33,7 +33,7 @@ namespace Stone.Clients.WebApi.Controllers
         }
 
         [HttpPost, Produces("application/json", Type = typeof(IApplicationResult<bool>))]
-        public async Task<IActionResult> Post([FromBody] ClientMessage message)
+        public async Task<IActionResult> PostAsync([FromBody] ClientMessage message)
         {
             return await ClientApplication.RegisterAsync(message);
         }

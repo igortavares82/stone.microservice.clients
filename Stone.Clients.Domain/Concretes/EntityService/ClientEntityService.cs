@@ -40,7 +40,7 @@ namespace Stone.Clients.Domain.Concretes.EntityService
 
         public async Task<IDomainResult<bool>> RegisterAsync(Client model)
         {
-            IDomainResult<bool> result = new DomainResult<bool>();
+            IDomainResult<bool> result = new DomainResult<bool>() { Data = true };
             Client registeredClient = await ClientRepository.GetAsync(model.Cpf);
 
             if (registeredClient == null)
@@ -50,6 +50,7 @@ namespace Stone.Clients.Domain.Concretes.EntityService
             }
             else
             {
+                result.Data = false;
                 result.ResultType = DomainResultType.DomainError;
                 result.Messages.Add("Client already registered");
             }

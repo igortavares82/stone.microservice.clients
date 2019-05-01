@@ -11,3 +11,16 @@ Stone.Clients.Domain/bin/Debug/netstandard2.0/Stone.Clients.Domain.deps.json
 Stone.Clients.Application/obj/Debug/netstandard2.0/Stone.Clients.Application.csproj.FileListAbsolute.txt
 Stone.Clients.Application/bin/Debug/netstandard2.0/Stone.Clients.Application.deps.json
 Stone.Clients.DependencyInjection/obj/Debug/netstandard2.0/Stone.Clients.DependencyInjection.csproj.FileListAbsolute.txt
+Stone.Clients.UnitTest/obj/project.assets.json
+Stone.Clients.UnitTest/obj/Stone.Clients.UnitTest.csproj.nuget.g.targets
+Stone.Clients.UnitTest/obj/Stone.Clients.UnitTest.csproj.nuget.g.props
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/Stone.Clients.UnitTest.csproj.FileListAbsolute.txt
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/Stone.Clients.UnitTest.csproj.CopyComplete
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/Stone.Clients.UnitTest.Program.cs
+Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/Stone.Clients.UnitTest.AssemblyInfo.cs
+Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.runtimeconfig.json
+Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.runtimeconfig.dev.json
+Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.deps.json
