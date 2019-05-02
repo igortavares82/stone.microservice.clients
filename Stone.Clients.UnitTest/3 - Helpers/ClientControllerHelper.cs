@@ -6,29 +6,32 @@ using Stone.Clients.WebApi.Controllers;
 using Stone.Framework.Result.Abstractions;
 using Stone.Framework.Result.Concretes;
 using System.Threading.Tasks;
+using Stone.Framework.Utils.ModelValidator;
+using System;
+using System.Collections.Generic;
 
 namespace Stone.Clients.UnitTest.Helpers
 {
     internal class ClientControllerHelper
     {
-        private static ClientController Controller { get; set; }
-
         internal static ClientController GetMock()
         {
-            Controller = Substitute.For<ClientController>(ClientApplicationHelper.GetMock());
-            Controller.PostAsync(Arg.Any<ClientMessage>()).Returns(PostAsyncReturn);
+            ClientController controller = Substitute.For<ClientController>(ClientApplicationHelper.GetMock());
+            
+            controller.PostAsync(Arg.Any<ClientMessage>()).Returns(PostAsyncReturn);
 
-            return Controller;
+            return controller;
         }
 
-        private static Task<IActionResult> PostAsyncReturn(CallInfo info)
+        private static async Task<IActionResult> PostAsyncReturn(CallInfo info)
         {
             IApplicationResult<bool> result = new ApplicationResult<bool>();
-            ClientMessage message = info.Arg<ClientMessage>();
+            Tuple<bool, List<string>> validationResult = Validator.Validate(info.Arg<ClientMessage>());
 
-            result.Data = Controller.TryValidateModel(message);
+            result.Data = validationResult.Item1;
+            result.Messages.AddRange(validationResult.Item2);
 
-            return Task.FromResult<IActionResult>(result);
+            return result;
         }
 
     }

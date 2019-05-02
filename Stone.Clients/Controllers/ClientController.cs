@@ -12,6 +12,8 @@ namespace Stone.Clients.WebApi.Controllers
     {
         private IClientApplication ClientApplication { get; }
 
+        public ClientController() { }
+
         public ClientController(IClientApplication clientApplication)
         {
             ClientApplication = clientApplication;
@@ -21,19 +23,19 @@ namespace Stone.Clients.WebApi.Controllers
         public string GetWellcome() => "Wellcome to client service!";
 
         [HttpGet("{cpf}"), Produces("application/json", Type = typeof(IApplicationResult<ClientMessage>))]
-        public async Task<IActionResult> GetAsync([FromRoute] ClientSearchMessage message)
+        public virtual async Task<IActionResult> GetAsync([FromRoute] ClientSearchMessage message)
         {
             return await ClientApplication.GetAsync(message);
         }
 
         [HttpGet, Produces("application/json", Type = typeof(IApplicationResult<List<ClientMessage>>))]
-        public async Task<IActionResult> GetAsync()
+        public virtual async Task<IActionResult> GetAsync()
         {
             return await ClientApplication.GetAllAsync();
         }
 
         [HttpPost, Produces("application/json", Type = typeof(IApplicationResult<bool>))]
-        public async Task<IActionResult> PostAsync([FromBody] ClientMessage message)
+        public virtual async Task<IActionResult> PostAsync([FromBody] ClientMessage message)
         {
             return await ClientApplication.RegisterAsync(message);
         }
