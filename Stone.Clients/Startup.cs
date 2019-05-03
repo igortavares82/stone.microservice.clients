@@ -38,7 +38,7 @@ namespace Stone.Clients
 
             services.AddSwaggerGen(s =>
             {
-                s.SwaggerDoc("v1", new Info { Title = "Client service API", Version = "v1" });
+                s.SwaggerDoc("v1", new Info { Title = "Client microservice API", Version = "v1" });
 
                 string caminhoAplicacao = PlatformServices.Default.Application.ApplicationBasePath;
                 string nomeAplicacao = PlatformServices.Default.Application.ApplicationName;
