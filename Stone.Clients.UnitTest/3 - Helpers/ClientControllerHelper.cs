@@ -17,7 +17,6 @@ namespace Stone.Clients.UnitTest.Helpers
         internal static ClientController GetMock()
         {
             ClientController controller = Substitute.For<ClientController>(ClientApplicationHelper.GetMock());
-            
             controller.PostAsync(Arg.Any<ClientMessage>()).Returns(PostAsyncReturn);
 
             return controller;

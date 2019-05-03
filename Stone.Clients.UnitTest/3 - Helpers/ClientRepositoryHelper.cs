@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Stone.Clients.UnitTest.DataProviders
 {
-    internal static class ClientRepositoryHelper
+    internal class ClientRepositoryHelper
     {
         private static List<Client> Clients { get; set; } = new List<Client>();
 

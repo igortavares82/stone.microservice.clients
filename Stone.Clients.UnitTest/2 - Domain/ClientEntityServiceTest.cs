@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Stone.Clients.UnitTest.Domain
 {
-    public class ClientServiceTaskTest
+    public class ClientEntityServiceTest
     {
         [Theory]
         [ClassData(typeof(ClientDataProvider))]
