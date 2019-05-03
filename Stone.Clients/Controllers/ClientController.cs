@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Stone.Clients.WebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/client")]
     public class ClientController : Controller
     {
         private IClientApplication ClientApplication { get; }
