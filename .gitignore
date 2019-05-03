@@ -24,3 +24,8 @@ Stone.Clients.UnitTest/obj/Debug/netcoreapp2.1/Stone.Clients.UnitTest.AssemblyIn
 Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.runtimeconfig.json
 Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.runtimeconfig.dev.json
 Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.UnitTest.deps.json
+Stone.Clients/obj/project.assets.json
+Stone.Clients/obj/Stone.Clients.WebApi.csproj.nuget.g.targets
+Stone.Clients/obj/Stone.Clients.WebApi.csproj.nuget.g.props
+Stone.Clients/bin/Debug/netcoreapp2.1/Stone.Clients.WebApi.xml
+Stone.Clients.UnitTest/bin/Debug/netcoreapp2.1/Stone.Clients.WebApi.xml

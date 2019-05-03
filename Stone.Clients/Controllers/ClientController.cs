@@ -12,8 +12,6 @@ namespace Stone.Clients.WebApi.Controllers
     {
         private IClientApplication ClientApplication { get; }
 
-        public ClientController() { }
-
         public ClientController(IClientApplication clientApplication)
         {
             ClientApplication = clientApplication;
