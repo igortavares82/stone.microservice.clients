@@ -1,9 +1,0 @@
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\bin\Debug\netstandard2.0\Stone.Clients.Models.deps.json
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\bin\Debug\netstandard2.0\Stone.Clients.Models.dll
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\bin\Debug\netstandard2.0\Stone.Clients.Models.pdb
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.csproj.CoreCompileInputs.cache
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.AssemblyInfoInputs.cache
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.AssemblyInfo.cs
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.dll
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.pdb
-C:\projects\stone\stone.microservice.clients\Stone.Clients.Models\obj\Debug\netstandard2.0\Stone.Clients.Models.csprojAssemblyReference.cache
